@@ -10,7 +10,7 @@ module.exports = withUiHook(async ({ payload, zeitClient }) => {
   const { clientState, action } = payload;
   const store = await zeitClient.getMetadata();
 
-  if (action === "submit") {
+  if (action === "test") {
     axios.get("https://a-p-izza.herokuapp.com/");
     // store.secretId = clientState.secretId;
     // store.secretKey = clientState.secretKey;
@@ -26,7 +26,7 @@ module.exports = withUiHook(async ({ payload, zeitClient }) => {
   return htm`
 		<Page>
         <Container>
-        <Button action="test">Submit</Button>
+        <Button action="test">test</Button>
         </Container>
 		</Page>
         `;
