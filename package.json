@@ -1,23 +1,14 @@
 {
   "name": "APIzza",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "dependencies": {
+    "micro": "^9.3.4",
     "@zeit/integration-utils": "latest",
     "axios": "^0.19.0",
     "dominos": "workingjubilee/require-dominos#master"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/workingjubilee/APIzza.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/workingjubilee/APIzza/issues"
   },
