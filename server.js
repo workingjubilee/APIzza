@@ -59,12 +59,17 @@ async function uiHook(req, res) {
   );
 }
 
+module.exports = uiHook;
+
+// Everything after here only matters when running npm start
 const server = micro(uiHook);
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5005;
 
 console.log(`UiHook started on http://localhost:${port}`);
-module.exports = server.listen(port, err => {
+
+server.listen(port, err => {
   if (err) {
     throw err;
   }
 });
+

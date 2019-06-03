@@ -2,7 +2,7 @@
   "name": "application-pizzaing-interface",
   "main": "index.js",
   "scripts": {
-    "start": "micro"
+    "start": "node server.js"
   },
   "dependencies": {
     "@zeit/integration-utils": "latest",
