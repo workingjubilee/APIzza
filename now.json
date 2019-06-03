@@ -1,6 +1,9 @@
 {
   "name": "application-pizzaing-interface",
   "version": 2,
-  "builds": [{ "src": "index.js", "use": "@now/node" }],
-  "routes": [{ "src": "/", "dest": "index.js" }]
+  "builds": [{ "src": "index.js", "use": "@now/node" },
+    { "src": "pyzza/pizza.py", "use": "@now/python" }],
+  "routes": [{ "src": "/", "dest": "index.js" },
+    { "src": "/pyzza", "use": "pyzza/pizza.py"  },
+    { "src": "/confirm", "use": "confirm.js" }]
 }
